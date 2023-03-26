@@ -21,6 +21,8 @@ jquery mobile, cordova을 이용한 포트폴리오 앱
 - cordova: 11.1.0
 
 ## 코드
+- 4개의 페이지를 한 개의 index.html 안에 다 넣음. data-role="page"
+- 기존의 header를 jquery-mobile의 data-role="header"로 변경하여 모바일 화면에 맞게 수정
 - 기존의 nav를 jquery-mobile의 data-role="navbar"로 변경하여 모바일 화면에 맞게 수정
 - navbar를 header안으로 묶어 navbar도 header의 일부로 수정
 - 기존의 footer를 jquery-mobile의 data-role="footer"로 변경하여 모바일 화면에 맞는 푸터로 수정
