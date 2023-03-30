@@ -1,0 +1,274 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#main .ui-content {
+  padding: 0;
+}
+
+.main-img {
+  margin-bottom: 1em;
+}
+
+#title {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  z-index: 1;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+}
+
+.icon img {
+  width: 3em;
+  height: 3em;
+}
+.arrow_up {
+  position: absolute;
+  text-align: center;
+  border-radius: 30px;
+  z-index: 1;
+  top: 6em;
+  left: 45%;
+  z-index: 9999;
+}
+
+.arrow_down {
+  position: absolute;
+  bottom: 4em;
+  left: 44%;
+  text-align: center;
+  z-index: 9999;
+}
+
+.ui-header {
+  background-size: cover;
+  padding-top: 20px;
+}
+
+#gyeongju .ui-header {
+  background-image: url("/img/gyeongju/1.jpeg");
+  background-position: 0% 4%;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#hadong .ui-header {
+  background-image: url("/img/hadong/1.jpeg");
+  background-position: 0% 50%;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.card {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+}
+
+.card320 {
+  height: 320px;
+}
+
+.card320 img {
+  width: 320px;
+  height: 320px;
+}
+
+.ui-content {
+  background-image: url("../img/smail_bg.gif");
+  background-repeat: repeat;
+}
+
+/* 경주 사진 */
+.gyeongju-01 {
+  background-image: url("../img/gyeongju/1.jpeg");
+  background-size: cover;
+}
+.gyeongju-02 {
+  background-image: url("../img/gyeongju/2.jpeg");
+  background-size: cover;
+}
+.gyeongju-03 {
+  background-image: url("../img/gyeongju/3.jpeg");
+  background-size: cover;
+}
+.gyeongju-04 {
+  background-image: url("../img/gyeongju/4.jpeg");
+  background-size: cover;
+}
+.gyeongju-05 {
+  background-image: url("../img/gyeongju/5.jpeg");
+  background-size: cover;
+}
+
+/* 하동 사진 */
+.hadong-01 {
+  background-image: url("../img/hadong/1.jpeg");
+  background-size: cover;
+  background-position-x: -16px;
+}
+.hadong-02 {
+  background-image: url("../img/hadong/2.jpeg");
+  background-size: cover;
+}
+.hadong-03 {
+  background-image: url("../img/hadong/3.jpeg");
+  background-size: cover;
+}
+.hadong-04 {
+  background-image: url("../img/hadong/4.jpeg");
+  background-size: cover;
+}
+.hadong-05 {
+  background-image: url("../img/hadong/5.jpeg");
+  background-size: cover;
+}
+
+.menu {
+  position: absolute;
+  z-index: 2;
+  top: 5em;
+  left: 1em;
+  width: 4em;
+  height: 4em;
+}
+
+.menu img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.menu-item {
+  width: 7.5em;
+  height: 7.5em;
+  border-radius: 0.5em;
+}
+
+#popup {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20em;
+  height: 11em;
+  padding: 1.7em;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 4;
+  border-radius: 1em;
+}
+#popup.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#developer {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22em;
+  height: 36em;
+  padding: 1.7em;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 5;
+  border-radius: 1em;
+}
+
+#developer.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#chart {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22em;
+  height: 31em;
+  padding: 1.7em;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 5;
+  border-radius: 1em;
+}
+
+#chart.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.githubIcon {
+  width: 3em;
+  height: 3em;
+}
+
+#myChart {
+  width: 18.5em;
+  height: 18.5em;
+}
