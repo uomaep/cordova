@@ -16,6 +16,8 @@
 - Visual Studio Code
 - Xcode
 - Cordova
+- intelliJ
+- Spring
 
 ### 사용 플러그인
 - cordova splash screen: ^6.0.2 (앱 실행 시 로딩화면 커스텀)
@@ -50,3 +52,16 @@
 - 첫 번째 메뉴는 개발자의 소개창이 뜬다.
 - 두 번째 메뉴는 경주의 Top 5 여행지를 차트로 표현하는 창이 뜬다.
 - 메뉴 버튼을 다시 누를 시 팝업 창이 사라진다.
+
+#### 서버와 연동
+## intellij, Spring 
+- Gradle - Kotlin
+- Language - Kotlin
+- Spring Boot: ^3.0.5
+
+### 서버 연동 화면(intellij, Spring)
+<img width="2032" alt="스크린샷 2023-03-31 오전 1 28 30" src="https://user-images.githubusercontent.com/114221785/228903192-25ab1047-7759-40e1-9595-56a32633b5bc.png">
+
+### localhost:8080에 접속
+<img width="1072" alt="스크린샷 2023-03-31 오전 1 28 49" src="https://user-images.githubusercontent.com/114221785/228904027-de98e705-6c94-4510-873a-c63775d7f6ec.png">
+
