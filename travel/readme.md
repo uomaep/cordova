@@ -32,6 +32,9 @@
 ## 실행 결과(스크린샷)
 #### 실행
 <img width="425" alt="스크린샷 2023-03-31 오전 12 58 19" src="https://user-images.githubusercontent.com/114221785/228899281-dbd116e6-68a0-4a9e-91e4-8e880d33b855.png">
+https://user-images.githubusercontent.com/114221785/229007399-b72fe32b-ae3d-4720-8be6-ec5f86a677c6.mov
+
+
 - splash screen 플러그인의 기능으로 로딩 화면 커스텀
 
 #### 첫페이지
