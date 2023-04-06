@@ -17,6 +17,7 @@
 - jquery: ^1.11.1
 - jquery-mobile: ^1.4.5
 - tailwindcss: ^3.2.7 (css framework)
+- flowbite : menu dropdown
 
 ## 결과 스크린샷
 ### 메인화면
@@ -42,3 +43,6 @@
 ![화면-기록-2023-04-07-오전-2 24 50](https://user-images.githubusercontent.com/114221785/230452573-bef4dc18-95e0-4ba6-9f2f-99d6d674773f.gif)
 
 <br>
+
+## 호스팅
+<a href="https://uomaep.github.io/uomaep-homepage/">uomaep-homepage</a>
