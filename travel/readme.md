@@ -1,4 +1,4 @@
-# 고급프로그래밍 - cordova 앱 프로젝트
+cordova 앱 프로젝트
 - 앱 이름: Travel
 - 설명: 여행가기 좋은 지역 소개하는 앱
 
@@ -31,13 +31,22 @@
 
 ## 실행 결과(스크린샷)
 #### 실행
-<img width="425" alt="스크린샷 2023-03-31 오전 12 58 19" src="https://user-images.githubusercontent.com/114221785/228899281-dbd116e6-68a0-4a9e-91e4-8e880d33b855.png">
-https://user-images.githubusercontent.com/114221785/229007399-b72fe32b-ae3d-4720-8be6-ec5f86a677c6.mov
+<img width="425" alt="스크린샷 2023-03-31 오전 12 58 19" src="https://user-images.githubusercontent.com/114221785/228899281-dbd116e6-68a0-4a9e-91e4-8e880d33b855.png"> <br>
+
+![화면-기록-2023-03-31-오전-11 31 16](https://user-images.githubusercontent.com/114221785/229011157-30d86b13-dccc-4cc8-b59a-3692d0f25f7c.gif)
+
+<br>
+
+
 
 
 - splash screen 플러그인의 기능으로 로딩 화면 커스텀
 
 #### 첫페이지
+
+![화면-기록-2023-03-31-오전-11 55 53](https://user-images.githubusercontent.com/114221785/229011932-2957b98f-3a69-468a-a6e9-6e30f0baaa35.gif)
+
+<br>
 <img width="425" alt="스크린샷 2023-03-31 오전 12 58 31" src="https://user-images.githubusercontent.com/114221785/228899596-8c8ada7b-2f32-41d5-9f59-f156c5d66265.png">
 <img width="425" alt="스크린샷 2023-03-31 오전 12 58 48" src="https://user-images.githubusercontent.com/114221785/228899740-28542ad6-3d51-4e56-8dd1-df2ef222c2de.png">
 - 슬라이드 기능으로 경주와 하동을 선택할 수 있다. 선택 후 밑에 화살표 버튼을 누르면 각 지역의 여행지를 소개하는 페이지로 이동한다.
@@ -46,6 +55,11 @@ https://user-images.githubusercontent.com/114221785/229007399-b72fe32b-ae3d-4720
 <img width="425" alt="스크린샷 2023-03-31 오전 12 58 51" src="https://user-images.githubusercontent.com/114221785/228900052-f6f5649c-1add-434b-b217-89f389a7dad0.png">
 <img width="425" alt="스크린샷 2023-03-31 오전 12 58 56" src="https://user-images.githubusercontent.com/114221785/228900104-375ed165-b894-4fc6-8e1c-d5cdf912cd56.png">
 - 각 지역의 여행지 추천 페이지이다. 4초마다 슬라이드가 자동으로 넘어가고 또한 터치 드래그 시에도 슬라이드가 넘어간다.
+<br>
+
+![화면-기록-2023-03-31-오후-12 08 40](https://user-images.githubusercontent.com/114221785/229013813-b835b1ac-2f46-458b-9ec6-25e54a2ff8c4.gif)
+
+<br>
 
 #### 메뉴 버튼
 <img width="425" alt="스크린샷 2023-03-31 오전 12 59 03" src="https://user-images.githubusercontent.com/114221785/228900425-667cd7e0-2f8d-4573-80a0-827b2afa9ed0.png">
@@ -55,6 +69,11 @@ https://user-images.githubusercontent.com/114221785/229007399-b72fe32b-ae3d-4720
 - 첫 번째 메뉴는 개발자의 소개창이 뜬다.
 - 두 번째 메뉴는 경주의 Top 5 여행지를 차트로 표현하는 창이 뜬다.
 - 메뉴 버튼을 다시 누를 시 팝업 창이 사라진다.
+<br>
+
+![화면-기록-2023-03-31-오후-12 12 03](https://user-images.githubusercontent.com/114221785/229014117-79df0f93-e439-456d-8865-eb7c0e4ead49.gif)
+
+<br>
 
 #### 서버와 연동
 ## intellij, Spring 
@@ -67,4 +86,5 @@ https://user-images.githubusercontent.com/114221785/229007399-b72fe32b-ae3d-4720
 
 ### localhost:8080에 접속
 <img width="1072" alt="스크린샷 2023-03-31 오전 1 28 49" src="https://user-images.githubusercontent.com/114221785/228904027-de98e705-6c94-4510-873a-c63775d7f6ec.png">
+
 
