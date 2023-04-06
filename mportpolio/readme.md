@@ -1,5 +1,13 @@
-# 고급 프로그래밍 과제1
 jquery mobile, cordova을 이용한 포트폴리오 앱
+
+## 하드웨어 및 소프트웨어
+<img width="392" alt="스크린샷 2023-03-31 오전 1 04 58" src="https://user-images.githubusercontent.com/114221785/228896845-31d67670-884c-4ac7-8c20-652844c19e98.png">
+### 하드웨어
+- 프로세서: 2.3 GHz 8코어 Intel Core i9
+- 그래픽: AMD Radeon Pro 5500M 4 GB Intel UHD Graphics 630 1536 MB
+- 메모리: 16GB 2667 MHz DDR4
+### 소프트웨어
+- 13.0.1(22A400)
 
 ## 결과
 - 소개 페이지
@@ -27,3 +35,4 @@ jquery mobile, cordova을 이용한 포트폴리오 앱
 - navbar를 header안으로 묶어 navbar도 header의 일부로 수정
 - 기존의 footer를 jquery-mobile의 data-role="footer"로 변경하여 모바일 화면에 맞는 푸터로 수정
 - footer의 position을 "fix"로 설정하여 content의 높이와 상관없이 푸터는 화면 하단에 고정시킴.
+
