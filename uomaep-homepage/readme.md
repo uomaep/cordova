@@ -46,16 +46,8 @@
 
 ### Custom HTML 태그 함수화 및 리팩토링하여 재사용성 및 유지보수
 <img width="558" alt="스크린샷 2023-04-07 오후 2 10 38" src="https://user-images.githubusercontent.com/114221785/230545147-f072bfbc-cb7f-4788-b590-96a414729e4b.png">
-```html
-<custom-navbar src="title"></custom-navbar>
-```
-이 코드를 추가하기만 하면 상단에 고정된 Navbar사용 가능
 
 <img width="798" alt="스크린샷 2023-04-07 오후 2 14 43" src="https://user-images.githubusercontent.com/114221785/230545575-bab5b617-8fa8-4de7-b5aa-82348ac91c26.png">
-```
-<custom-item src="./image/img.png" href="url" title="" sub=""></custom-item>
-```
-이 코드를 사용하면 card-item을 추가
 
 ## 호스팅
 <a href="https://uomaep.github.io/uomaep-homepage/">uomaep-homepage</a>
