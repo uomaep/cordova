@@ -44,7 +44,7 @@
 
 <br>
 
-### Custom hHTML 태그 함수화 및 리팩토링하여 재사용성 및 유지보수
+### Custom HTML 태그 함수화 및 리팩토링하여 재사용성 및 유지보수
 <img width="558" alt="스크린샷 2023-04-07 오후 2 10 38" src="https://user-images.githubusercontent.com/114221785/230545147-f072bfbc-cb7f-4788-b590-96a414729e4b.png">
 ```html
 <custom-navbar src="title"></custom-navbar>
