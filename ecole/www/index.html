@@ -1,0 +1,641 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>에꼴 프로젝트</title>
+    <link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" />
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+      li {
+        list-style: none;
+      }
+      .picture {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .picture li {
+        float: left;
+        width: 50%;
+      }
+      .picture li a {
+        display: block;
+        margin: 5px;
+        border: 1px;
+      }
+      .picture li img {
+        display: block;
+        width: 50%;
+        height: auto;
+      }
+      .picture li img:hover {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .banner {
+        width: 10rem;
+        height: 10rem;
+      }
+
+      .header {
+        background: #a6c0c7;
+        border: none;
+        color: black;
+      }
+
+      img {
+        width: 100%;
+        height: 50%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div data-theme="b">
+      <div data-role="page" id="home">
+        <div class="header" data-role="header" data-theme="b">
+          <h1>에꼴프로젝트</h1>
+        </div>
+        <div data-role="content" style="text-align: center">
+          <a href="https://kscms.ks.ac.kr/" target="_blank"
+            ><img class="banner" src="./assets/img/logo.svg"
+          /></a>
+          <ul data-role="listview" data-inset="true">
+            <li><a href="#intro">에꼴프로젝트 소개</a></li>
+            <li>
+              <a href="#movie" data-rel="dialog">개요 및 목표, 세부사항</a>
+            </li>
+            <li>
+              <a href="#wizard3-1" data-rel="dialog">주차 별 강의 내용</a>
+            </li>
+            <li><a href="#gallery">프로젝트 사진</a></li>
+            <li><a href="#member">프로젝트 참여멤버</a></li>
+            <li><a href="#project">프로젝트</a></li>
+          </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+          <h1>소프트웨어학과 임대원</h1>
+        </div>
+      </div>
+      <div data-role="page" id="intro" data-theme="b">
+        <div data-role="header" data-theme="b">
+          <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+          <h1>소프트웨어학과 소개</h1>
+        </div>
+        <div data-role="content">
+          <div style="text-align: center">
+            <img src="bgdokdo2.png" />
+          </div>
+          <div
+            data-role="collapsible-set"
+            data-theme="b"
+            data-content-theme="e"
+          >
+            <div data-role="collapsible" data-collapsed="false">
+              <h3>소개</h3>
+              <p>
+                에꼴프로젝트 강의는 캡스톤디자인과정으로 개설 된
+                교과목입니다.<br />
+                본 강의는 프랑스에서 운영중인 소프트웨어 개발 혁신강의로
+                평가받는 에꼴42(ecole42) 교육과정을 대학 교육과정에 접목하여
+                운영중인 캡스톤디자인 과목입니다. 단일 교과목 12학점이 편성되어
+                있고 격주로 수업이 진행되며, 총 8회에 거쳐 과정이 진행됩니다.
+                <br /><br />
+                에꼴42(ecole 42)과정의 특징은 교수, 교재, 교육비가 없이
+                동료학습을 통해 매 주차 목표를 수행하여 최종 프로젝트를 진행하는
+                형태로 구성되어 있습니다. 이러한 특징을 정규 교과에 반영하기
+                위해 에꼴캡스톤 과정은 격주 오후 2시에 첫 세션을 시작으로 저녁
+                세션, 최종 세션을 종료한 후 결과 발표를 진행하고 강의가 종료되는
+                무박 2일의 해커톤 형태로 진행되며, 각 섹션별로 휴식시간과 석식,
+                야식이 제공됩니다.
+                <br /><br />
+                각 회차 강의는 3가지 세션으로 나뉘어져 현업중심 강의, 특강, 실습
+                등으로 진행되며, 4분의 교수님께서 본 과목을 진행합니다. 일반적인
+                교과과정의 내용을 바탕으로 실무 중심적인 테크닉을 풀어서 세션을
+                진행하고 현업에서 활동 중인 특강자를 모시고 현장의 이야기를
+                경험할 수 있는 특별한 과정이기도 합니다.
+                <br /><br />
+                모든 참가학생은 세션에 따른 회차별 과제를 수행하고, 이를
+                바탕으로 최종 개인 프로젝트까지 진행하도록 프로그램을
+                구성하였습니다.
+                <br /><br />
+                캡스톤디자인 과정은 학생이 스스로 프로젝트를 구성하고 진행하는데
+                중점을 둔 교육 과정으로 학생 스스로 성장하는 수업이 될 수 있도록
+                진행됩니다.
+              </p>
+            </div>
+            <div data-role="collapsible">
+              <h3>교육과정</h3>
+              <p>
+                본 학과의 교육과정에서는 이산수학, 전산수학, 컴퓨터 구조,
+                운영체제, 자료구조, 알고리즘, 데이터베이스, 컴퓨터 네트워크 등의
+                기반 지식을 습득하고, 프로그래밍 실습 교육과 프로젝트 수행 교육
+                등을 통해 소프트웨어 설계 및 구현 능력을 배양하며, 4차
+                산업혁명에 준비된 인재 양성을 위해 머신러닝, 인공지능 및 병렬
+                컴퓨팅 교육 등을 실시합니다.
+              </p>
+            </div>
+            <div data-role="collapsible">
+              <h3>진로</h3>
+              <p>
+                본 학과 졸업생들은 웹 및 앱 개발자, 게임 개발자,
+                서버/네트워크/데이터베이스/보안 관리자, 전산직 공무원, 프리랜서
+                프로그래머 등으로 활동할 수 있으며, IT분야 대기업, 중견 및 중소
+                업체와 금융원 및 일반 기업체 IT 부서, 전산학 관련 국내외 대학원
+                등으로도 진출할 수 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+          <h1>소프트웨어학과 임대원</h1>
+        </div>
+      </div>
+
+      <div data-role="page" id="movie" data-theme="b">
+        <div data-role="header" data-position="fixed" data-theme="b">
+          <h1>교과목 개요 및 목표, 세부사항</h1>
+        </div>
+        <div data-role="content">
+          <div class="ui-bar ui-bar-a">교과목 개요</div>
+          <br />
+          <div>
+            <ul>
+              <li>교과목명: 에꼴프로젝트 캡스톤 디자인</li>
+              <li>
+                대상(권장)학과: 인공지능, 소프트웨어학과, 컴퓨터공학과,
+                정보통신학과 외 ICT웹 서비스 개발에 관심있는 학생.
+              </li>
+              <li>대상(권장)학년: 3, 4학년</li>
+              <li>시수/학점: 12시수 / 12학점</li>
+              <li>수업유형: 강의/토론/실습</li>
+            </ul>
+          </div>
+        </div>
+        <div data-role="content">
+          <div class="ui-bar ui-bar-a">교과목 목표</div>
+          <br />
+          <div>
+            <ul>
+              <li>ICT 서비스의 이해 및 서비스 구축</li>
+              <li>Backend서비스의 이해 및 구축</li>
+              <li>오픈소스의 이해 Web개발</li>
+              <li>Deploy 시스템의 이해 및 구축</li>
+              <li>개인 프로젝트</li>
+            </ul>
+          </div>
+        </div>
+        <div data-role="content">
+          <div class="ui-bar ui-bar-a">세부사항</div>
+          <br />
+          <div>
+            <ul>
+              <li>교과목명: 에꼴프로젝트 캡스톤 디자인</li>
+              <li>
+                대상(권장)학과: 인공지능, 소프트웨어학과, 컴퓨터공학과,
+                정보통신학과 외 ICT웹 서비스 개발에 관심있는 학생.
+              </li>
+              <li>대상(권장)학년: 3, 4학년</li>
+              <li>시수/학점: 12시수 / 12학점</li>
+              <li>수업유형: 강의/토론/실습</li>
+            </ul>
+          </div>
+        </div>
+        <div data-role="footer" data-theme="b"></div>
+      </div>
+
+      <div data-role="page" id="wizard3-1">
+        <div data-role="header">
+          <h1>주차 별 강의내용</h1>
+        </div>
+        <div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+          <div data-role="collapsible" data-collapsed="false">
+            <h3>1주차 / ICT 인프라 구축</h3>
+            <p>
+              <li>- 오리엔테이션</li>
+              <li>- ICT 서비스의 이해</li>
+              <li>- ICT 구축을 위한 인프라</li>
+              <li>- Cloudpanel</li>
+            </p>
+            <img src="./assets/img/1s.webp" />
+          </div>
+          <div data-role="collapsible" data-collapsed="false">
+            <h3>2주차 / 오픈소스 Web 기초</h3>
+            <p>
+              <li>- 오픈소스의 개념</li>
+              <li>- 오픈소스를 활용한 Web개발</li>
+              <li>- 오픈소스 CMS의 개념</li>
+              <li>- WordPress를 활용한 포트폴리오 제작</li>
+            </p>
+            <img src="./assets/img/2s.webp" />
+          </div>
+          <div data-role="collapsible" data-collapsed="false">
+            <h3>3주차 / 오픈소스 Web 활용</h3>
+            <p>
+              <li>- WordPress 테마 및 플러그인</li>
+              <li>- Headless CMS 개념</li>
+              <li>- Headless CMS 활용(via React.js)</li>
+            </p>
+          </div>
+          <div data-role="collapsible" data-collapsed="false">
+            <h3>4주차 / Backend 서비스 구축</h3>
+            <p>
+              <li>- Backend 서비스의 이해</li>
+              <li>- Backend 서비스 구축(via Appwrite)</li>
+              <li>- Backend 서비스 활용(via React.js)</li>
+            </p>
+          </div>
+          <div data-role="collapsible" data-collapsed="false">
+            <h3>5주차 / ICT 서비스 Deploy</h3>
+            <p>
+              <li>- ICT서비스 Deploy의 이해</li>
+              <li>- Docker / Kubernetes의 이해</li>
+              <li>- CI / CD의 이해</li>
+              <li>- Deploy 서비스 구축a(via coolify)</li>
+            </p>
+          </div>
+          <div data-role="collapsible" data-collapsed="false">
+            <h3>6주차 / 모바일 서비스 구축</h3>
+            <p>
+              <li>- Cordova를 활용한 모바일 서비스 구축</li>
+            </p>
+          </div>
+          <div data-role="collapsible" data-collapsed="false">
+            <h3>7주차 / ICT 시스템 개발 프로젝트</h3>
+            <p>
+              <li>- ICT 시스템 개발 프로젝트</li>
+            </p>
+          </div>
+          <div data-role="collapsible" data-collapsed="false">
+            <h3>8주차 / 프로젝트 결과 발표</h3>
+            <p>
+              <li>- 프로젝트 결과 발표 및 평가</li>
+            </p>
+          </div>
+          <div data-role="collapsible" data-collapsed="false">
+            <h3>프로젝트</h3>
+            <p>
+              <li>- Ubuntu 22.04LTS를 기반으로 구축한 웹 어플리케이션 서버</li>
+              <li>
+                - OpenSource CMS인 WordPress를 활용한 개인 포트폴리오 사이트
+              </li>
+              <li>- Headless CMS를 활용한 React.js / Next.js 서비스</li>
+              <li>
+                - Backend 개발을 위한 Firebase Alternative Appwrite 서버 구축 및
+                활용
+              </li>
+              <li>- 프로젝트 Deploy 및 CI/CD를 위한 Cloolify 서버 구축</li>
+              <li>- 개인별 과정 활용 프로젝트</li>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div data-role="page" id="gallery" data-theme="b">
+        <div data-role="header" data-position="fixed" data-theme="b">
+          <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+          <h1>소프트웨어학과 갤러리</h1>
+        </div>
+        <div data-role="content">
+          <ul class="picture">
+            <li>
+              <a href="./assets/img/g1.jpg" rel="external"
+                ><img src="./assets/img/g1.jpg"
+              /></a>
+            </li>
+            <li>
+              <a href="./assets/img/g2.jpg" rel="external"
+                ><img src="./assets/img/g2.jpg"
+              /></a>
+            </li>
+            <li>
+              <a href="./assets/img/g3.jpg" rel="external"
+                ><img src="./assets/img/g3.jpg"
+              /></a>
+            </li>
+            <li>
+              <a href="./assets/img/g4.jpg" rel="external"
+                ><img src="./assets/img/g4.jpg"
+              /></a>
+            </li>
+            <li>
+              <a href="./assets/img/g5.jpg" rel="external"
+                ><img src="./assets/img/g5.jpg"
+              /></a>
+            </li>
+            <li>
+              <a href="./assets/img/g6.jpg" rel="external"
+                ><img src="./assets/img/g6.jpg"
+              /></a>
+            </li>
+            <li>
+              <a href="./assets/img/g7.jpg" rel="external"
+                ><img src="./assets/img/g7.jpg"
+              /></a>
+            </li>
+            <li>
+              <a href="./assets/img/g8.jpg" rel="external"
+                ><img src="./assets/img/g8.jpg"
+              /></a>
+            </li>
+            <li>
+              <a href="./assets/img/g9.jpg" rel="external"
+                ><img src="./assets/img/g9.jpg"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+          <h1>소프트웨어학과 임대원</h1>
+        </div>
+      </div>
+      <div data-role="page" id="member" data-theme="b">
+        <div data-role="header" data-position="fixed" data-theme="b">
+          <h1>프로젝트 참여 멤버</h1>
+        </div>
+        <div data-role="content">
+          <div class="ui-bar ui-bar-a">오정민</div>
+          <br />
+          <div>
+            <img src="assets/profile/omin.jpg" />
+            <hr />
+            <ul>
+              <li>- 구분: 참여학생</li>
+              <li>- 소속: 소프트웨어학과</li>
+              <li>- 세션: 에꼴프로젝트</li>
+              <li>- 포트폴리오: <a href="https://ecole.omin.kr">link</a></li>
+              <li>- Github: <a href="https://github.com/ojingjing">link</a></li>
+            </ul>
+          </div>
+
+          <div class="ui-bar ui-bar-a">윤진수</div>
+          <br />
+          <div>
+            <img src="assets/profile/jinsu.jpg" />
+            <hr />
+            <ul>
+              <li>- 구분: 참여학생</li>
+              <li>- 소속: 소프트웨어학과</li>
+              <li>- 세션: 에꼴프로젝트</li>
+              <li>
+                - 포트폴리오: <a href="https://2019575042.ksecole.kr/">link</a>
+              </li>
+              <li>- Github: <a href="https://github.com/Jinsu404">link</a></li>
+            </ul>
+          </div>
+          <div class="ui-bar ui-bar-a">임대원</div>
+          <br />
+          <div>
+            <img src="assets/profile/daewon.jpg" />
+            <hr />
+            <ul>
+              <li>- 구분: 참여학생</li>
+              <li>- 소속: 소프트웨어학과</li>
+              <li>- 세션: 에꼴프로젝트</li>
+              <li>
+                - 포트폴리오: <a href="https://ecole.uomaep.com/">link</a>
+              </li>
+              <li>- Github: <a href="https://github.com/uomaep">link</a></li>
+            </ul>
+          </div>
+          <div class="ui-bar ui-bar-a">오영석</div>
+          <br />
+          <div>
+            <img src="assets/profile/yeongs.jpg" />
+            <hr />
+            <ul>
+              <li>- 구분: 참여학생</li>
+              <li>- 소속: 소프트웨어학과</li>
+              <li>- 세션: 에꼴프로젝트</li>
+              <li>- 포트폴리오: <a href="https://ecole.yeongs.kr/">link</a></li>
+            </ul>
+          </div>
+          <div class="ui-bar ui-bar-a">성백준</div>
+          <br />
+          <div>
+            <img src="assets/profile/jun.jpg" />
+            <hr />
+            <ul>
+              <li>- 구분: 참여학생</li>
+              <li>- 소속: 소프트웨어학과</li>
+              <li>- 세션: 에꼴프로젝트</li>
+              <li>
+                - 포트폴리오: <a href="https://2019875030.ksecole.kr/">link</a>
+              </li>
+              <li>- Github: <a href="https://github.com/Jun-1108">link</a></li>
+            </ul>
+          </div>
+          <div class="ui-bar ui-bar-a">박현수</div>
+          <br />
+          <div>
+            <img src="assets/profile/hysu.jpg" />
+            <hr />
+            <ul>
+              <li>- 구분: 참여학생</li>
+              <li>- 소속: 소프트웨어학과</li>
+              <li>- 세션: 에꼴프로젝트</li>
+              <li>- 포트폴리오: <a href="https://ecole.hysu.kr/">link</a></li>
+              <li>- Github: <a href="https://github.com/Korcp">link</a></li>
+            </ul>
+          </div>
+          <div class="ui-bar ui-bar-a">박광훈</div>
+          <br />
+          <div>
+            <img src="assets/profile/hoon.jpg" />
+            <hr />
+            <ul>
+              <li>- 구분: 참여학생</li>
+              <li>- 소속: 소프트웨어학과</li>
+              <li>- 세션: 에꼴프로젝트</li>
+              <li>
+                - 포트폴리오: <a href="https://2019675019.ksecole.kr/">link</a>
+              </li>
+              <li>
+                - Github: <a href="https://github.com/ChamChiii7">link</a>
+              </li>
+            </ul>
+          </div>
+          <div class="ui-bar ui-bar-a">김민조</div>
+          <br />
+          <div>
+            <img src="assets/profile/minjo.jpg" />
+            <hr />
+            <ul>
+              <li>- 구분: 참여학생</li>
+              <li>- 소속: 소프트웨어학과</li>
+              <li>- 세션: 에꼴프로젝트</li>
+              <li>
+                - 포트폴리오: <a href="https://2019575006.ksecole.kr/">link</a>
+              </li>
+              <li>- Github: <a href="https://github.com/KorJM">link</a></li>
+            </ul>
+          </div>
+          <div class="ui-bar ui-bar-a">김성영</div>
+          <br />
+          <div>
+            <img src="assets/profile/yeong.jpg" />
+            <hr />
+            <ul>
+              <li>- 구분: 참여학생</li>
+              <li>- 소속: 소프트웨어학과</li>
+              <li>- 세션: 에꼴프로젝트</li>
+              <li>- 포트폴리오: <a href="https://.ksecole.kr/">link</a></li>
+              <li>- Github: <a href="https://github.com/KorJM">link</a></li>
+            </ul>
+          </div>
+        </div>
+        <div data-role="footer" data-theme="b"></div>
+      </div>
+      <div data-role="page" id="project">
+        <div class="header" data-role="header" data-theme="b">
+          <h1>프로젝트</h1>
+        </div>
+        <div data-role="content" style="text-align: center">
+          <ul data-role="listview" data-inset="true">
+            <li><a href="#project1">Ubuntu & Cockpit</a></li>
+            <li><a href="#project2">Wordpress</a></li>
+            <li><a href="#project3">Appwrite & Svelte</a></li>
+            <li><a href="#project4">Spring Security</a></li>
+          </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+          <h1>소프트웨어학과 임대원</h1>
+        </div>
+      </div>
+      <div data-role="page" id="project1">
+        <div class="header" data-role="header" data-theme="b">
+          <h1>Ubuntu & Cockpit</h1>
+        </div>
+        <div data-role="content" style="text-align: left">
+          <h4>1. Install Ubuntu</h4>
+          <img src="assets/img/ubuntu.png" />
+          <br />
+          <h4>Install Cockpit</h4>
+          <li>- Linux용 브라우저 기반 관리 도구</li>
+          <li>
+            - 공격자의 입장에서 ssh 연결이 아니라 Cockpit을 쓰는 것을 예상하기
+            힘들기 때문에 조금이라도 보안성을높일 수 있음.
+          </li>
+          <li>
+            Cockpit의 기본포트를 사용하지 않고 다른 포트를 열면 더욱 보안을 높일
+            수 있음.
+          </li>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+          <h1>소프트웨어학과 임대원</h1>
+        </div>
+      </div>
+      <div data-role="page" id="project2">
+        <div class="header" data-role="header" data-theme="b">
+          <h1>Wordpress를 이용한 포트폴리오 사이트 제작</h1>
+        </div>
+        <div data-role="content" style="text-align: left">
+          <h4>
+            Wordpress로 만든 포트폴리오 사이트:<a
+              href="https://ecole.uomaep.com/"
+              >Link</a
+            >
+          </h4>
+          <br />
+          <p>
+            React, Next framework 환경에서 코딩을 통해 웹 제작만 해보다가
+            wordpress를 이용하여 웹을 제작해보니 쉬우면서도 강력한 기능을
+            만나봤던 것 같다. 약간 컨테이너 구성하는 방식이 Flutter와 매우
+            비슷한 개념이었던 같다. Flutter에서도 Row와 Column이라는 개념이
+            있는데, wordpress에서도 컨테이너 배치 방식을 정할 때 굉장히
+            비슷하다고 느꼈고, 이미 Flutter를 경험해봤던지라 레이아웃 배치가
+            그리 어렵진 않았던 것 같았다. 그리고 많은 테마와 플러그인을 통해
+            기능을 확장할 수 있고, 스타일이나 설정도 기존의 html, css개념을 알고
+            있다면 충분히 쉽게 할 수 있다고 생각이 든다.
+          </p>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+          <h1>소프트웨어학과 임대원</h1>
+        </div>
+      </div>
+      <div data-role="page" id="project3">
+        <div class="header" data-role="header" data-theme="b">
+          <h1>Appwrite를 이용하여 로그인 기능 구현</h1>
+        </div>
+        <div data-role="content" style="text-align: left">
+          <h4>Svelte와 Appwrite를 이용하여 간단한 회원 기능 사이트 제작</h4>
+          <h4>기능</h4>
+          <li>1. 로그인</li>
+          <li>2. 회원가입</li>
+          <li>3. 로그아웃</li>
+          <li>4. 로그인 세션 유지</li>
+          <h4>오류 메세지</h4>
+          <li>1. 로그인 실패 시 오류 메시지 출력</li>
+          <li>2. 회원가입 실패 시 오류 메시지 출력</li>
+          <h4>알림</h4>
+          <li>1. 로그아웃 시</li>
+          <li>회원가입 성공 시</li>
+          <h4>결과</h4>
+          <img src="assets/img/login.png" />
+          <br />
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+          <h1>소프트웨어학과 임대원</h1>
+        </div>
+      </div>
+      <div data-role="page" id="project4">
+        <div class="header" data-role="header" data-theme="b">
+          <h1>Spring Security</h1>
+        </div>
+        <div data-role="content" style="text-align: left">
+          <h4>Stack</h4>
+          <li>1. Java17</li>
+          <li>2. Spring Boot</li>
+          <li>3. Mybatis</li>
+          <li>4. AWS - ubuntu freetier ec2</li>
+          <li>5. docker, docker copose</li>
+          <li>6. mysql</li>
+          <img src="assets/img/spring-security.png" />
+          <br />
+          <h4>처리 과정</h4>
+          <li>
+            1. 사용자가 로그인 정보와 함께 인증 요청을 한다.(http request)
+          </li>
+          <li>
+            2. LoginAuthFilter가 요청을 가로채고, 가로챈 정보를 통해
+            LoginAuthToken의 인증용 객체를 생성한다.
+          </li>
+          <li>
+            3. AuthenticationManager의 구현체인 ProviderManager에게 생성한
+            LoginAuthToken 객체를 전달한다.
+          </li>
+          <li>
+            4. AuthenticationManager는 등록된 LoginAuthProvider을 조회하여
+            인증을 요구한다.
+          </li>
+          <li>
+            5. 실제 DB에서 사용자 인증정보를 가져오는
+            UserDataService(UserDetailService 구현체에)에 사용자 정보를
+            넘겨준다.
+          </li>
+          <li>
+            6. 넘겨받은 사용자 정보를 통해 DB에서 찾은 사용자 정복인
+            UserData(UserDetail 구현체) 객체를 만든다.
+          </li>
+          <li>
+            7. LoginAuthProvider는 UserData를 넘겨받고 사용자 정보를 비교한다.
+          </li>
+          <li>
+            8. 인증이 완료되면, JWT Access Token과 Refresh Token을 발행하여 반환
+          </li>
+          <h4>결과</h4>
+          <h5>성공</h5>
+          <img src="assets/img/success.png" />
+          <h5>실패</h5>
+          <img src="assets/img/failure.png" />
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+          <h1>소프트웨어학과 임대원</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
